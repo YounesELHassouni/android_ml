@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivitysingup extends AppCompatActivity {
-    Button btn;
+public class Activityform extends AppCompatActivity {
+    Button btn ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activitysingup);
-        btn = (Button) findViewById(R.id.button);
+        setContentView(R.layout.activity_form);
+        btn = (Button) findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Activityform.class);
+                Intent intent = new Intent(getApplicationContext(),Activityalgoritm_choice.class);
                 startActivity(intent);
             }
         });
